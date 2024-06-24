@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center font-bold text-5xl mt-12">
+        Welcome to my <span class="text-emerald-400">Awesome Discount</span> App
+      </h1>
+    </header>
+    <div class="flex justify-center mt-24">
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="image/prod6.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <h3 class="font-medium">Price: $<span id="local-price">1000</span></h3>
+          <p class="text-end my-2">Please pay: <span class="font-medium">$<span id="payable-price">00</span></span></p>
+          <div class="card-actions justify-end">
+            <button id="discount-btn" class="btn btn-primary hover:bg-sky-400 hover:border-none">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/utilities.js"></script>
+    <script src="js/discount.js"></script>
+  </body>
+</html>
